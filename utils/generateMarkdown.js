@@ -11,7 +11,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== 'None'){
-    return `* [License](#Licenses)`
+    return `* [License](##Licenses)`
   }
   return ``
 }
@@ -34,14 +34,15 @@ function generateMarkdown(data) {
   # ${data.title}
   ${renderLicenseBadge(data.license)} 
   ## Description
+  ${data.description}
 
   ## Table of Contents
-  * Installation
-  * Using the progrma
+  * [Installation](##Installation)
+  * [Using the program](##Usage)
   ${renderLicenseLink(data.license)}
-  * Contributing
-  * Test
-  * Questions
+  * [Contributing](##Contributing)
+  * [Test](##Testing)
+  * [Questions](##Questions)
 
   ## Installation
   ${data.installation}
@@ -52,9 +53,11 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)}
 
   ## Contribute to the program
+  ${data.contributing}
 
   ## Testing
-
+  ${data.testing}
+  
   ## Questions and Contact
   Reach out to me via 	[github](https://github.com/${data.github})
 
