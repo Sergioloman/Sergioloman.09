@@ -18,7 +18,7 @@ const questions = [
   {
     type: 'input',
     name: 'description',
-    message: 'describe your program',
+    message: 'Describe your program',
   },
   {
     type: 'input',
@@ -46,25 +46,34 @@ const questions = [
       'ISC' ,
       'None'
     ]
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: 'What is your email?',
   }
 ];
 
-// // TODO: Create a function to write README file
+// Creating a README using the name of the file and the data as placeholders parameters
 function writeToFile(fileName, data) {
+  //this function allows user to write a README in their own directory
   return fs.writeFileSync(path.join(process.cwd(),fileName),data)
+  
 }
 
-// // TODO: Create a function to initialize app
+// Creating a function to initialize app
 function init() {
 // init's first line of operations is running Inquirer  
 inquirer
+    // pulling from our questions object
     .prompt(questions)
+    // collecting responses
     .then(responses => {
       
-      //creating a new file with the responses
-      writeToFile('newReadMe.md',generateMarkdown(responses))
+      // passing our file name and responses as parameters to the function above // FileName= newReadMe.md ; generateMarkdown(responses)=data
+      writeToFile('newReadMe.md',generateMarkdown(responses)) 
     })
 }
 
-// // Function call to initialize app
+// Function call to initialize app
 init();
