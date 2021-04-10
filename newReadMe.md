@@ -1,34 +1,29 @@
 
-  # sergio
-  ![license](https://img.shields.io/badge/license-MIT-green) 
+  # rr ![license](https://img.shields.io/badge/license-OpenBSD-green) 
   ## Description
-  sergio
+  rr
 
   ## Table of Contents
-  * [Installation](##Installation)
-  * [Using the program](##Usage)
-  * [License](##Licenses)
-  * [Contributing](##Contributing)
-  * [Test](##Testing)
-  * [Questions](##Questions)
+  * [Installing the program](#Installation)
+  * [Using the program](#Usage)
+  * [License](#Licenses)
+  * [Contribute](#Contributing)
+  * [Contact](#Questions)
 
   ## Installation
-  sergio
+  rr
   
-  ## Using the program
-  sergio
+  ## Usage
+  rr
 
   ## Licenses
     
-    This project is license under MIT license.
+  This project is license under OpenBSD license
     
 
-  ## Contribute to the program
-  sergio
+  ## Contributing
+  rr
 
-  ## Testing
-  sergio
-  
-  ## Questions and Contact
-  Reach out to me via 	[github](https://github.com/sergio)
+  ## Questions
+  Please feel free to reach out to me via [github](https://github.com/rr)
 

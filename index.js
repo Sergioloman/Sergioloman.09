@@ -39,7 +39,13 @@ const questions = [
     type: 'list',
     name: 'license',
     message: 'What licences are used?( choose one )',
-    choices: ['MIT', 'Apache', 'OpenBSD','ISC' ,'None']
+    choices: [
+      'MIT', 
+      'Apache', 
+      'OpenBSD',
+      'ISC' ,
+      'None'
+    ]
   }
 ];
 
@@ -54,7 +60,7 @@ function init() {
 inquirer
     .prompt(questions)
     .then(responses => {
-      //console.log(responses)
+      
       //creating a new file with the responses
       writeToFile('newReadMe.md',generateMarkdown(responses))
     })
